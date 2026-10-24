@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Farda Syarif Mubarok">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hiu — penjaga keseimbangan laut</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="ocean" aria-hidden="true"></canvas>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="#hero">hiu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Buka menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#ciri">Ciri khas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#jenis">Jenis hiu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#peran">Peran &amp; mitos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#lindungi">Perlindungan</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="hero">
+  <div class="container hero-body">
+    <h1>Hiu menjaga laut tetap seimbang</h1>
+    <p class="lead mt-3 mb-4">Hiu sudah berenang selama lebih dari 450 juta tahun, jauh lebih lama dari pohon pertama di daratan. Kenali hewan yang sering disalahpahami ini.</p>
+    <div class="d-flex flex-wrap gap-2 mb-3">
+      <a href="#jenis" class="btn btn-solid btn-lg">Lihat jenis hiu</a>
+      <a href="#lindungi" class="btn btn-ghost btn-lg">Kenapa hiu perlu dilindungi</a>
+    </div>
+    <div class="hint">Gerakkan kursor untuk mengusik ikan, klik untuk membuat percikan.</div>
+    <div class="author">Farda Syarif Mubarok<br><span>NIM A12.2025.07306</span></div>
+  </div>
+</header>
+
+<main>
+<section id="ciri" class="sec">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-5">
+        <h2 class="mb-3">Bukan ikan biasa</h2>
+        <p class="lead-sm">Ada lebih dari 500 spesies hiu. Ukurannya berkisar dari sekitar 20 cm sampai sekitar 12 m pada hiu paus, ikan terbesar di dunia. Meski beragam, hampir semuanya punya perlengkapan yang sama untuk berburu.</p>
+      </div>
+      <div class="col-lg-7">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item ciri py-3"><strong>Kerangka tulang rawan.</strong> Lebih ringan dan lentur daripada tulang keras, jadi hiu hemat tenaga saat berenang.</li>
+          <li class="list-group-item ciri py-3"><strong>Sensor listrik.</strong> Organ ampullae of Lorenzini di kepala menangkap medan listrik lemah dari mangsa yang bersembunyi.</li>
+          <li class="list-group-item ciri py-3"><strong>Gigi yang terus diganti.</strong> Gigi yang tanggal digantikan deretan gigi di belakangnya sepanjang hidup.</li>
+          <li class="list-group-item ciri py-3"><strong>Gurat sisi.</strong> Garis sensor di sepanjang tubuh merasakan getaran air dari jauh.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="jenis" class="sec alt">
+  <div class="container">
+    <h2 class="mb-2">Empat hiu yang perlu kamu kenal</h2>
+    <p class="lead-sm mb-5">Status mengikuti daftar merah IUCN. Periksa situs IUCN untuk data terbaru.</p>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+      <div class="col"><article class="card h-100"><div class="card-body"><canvas class="sp" data-sp="white" role="img" aria-label="Ilustrasi ASCII Hiu putih besar"></canvas>
+        <h3>Hiu putih besar</h3><div class="latin mb-3">Carcharodon carcharias</div>
+        <p>Predator puncak di perairan sedang dan hangat. Mangsanya antara lain anjing laut dan ikan besar.</p>
+        <div class="stat">hingga ±6 m</div><span class="badge tag mt-2">Rentan</span>
+      </div></article></div>
+      <div class="col"><article class="card h-100"><div class="card-body"><canvas class="sp" data-sp="hammer" role="img" aria-label="Ilustrasi ASCII Hiu martil"></canvas>
+        <h3>Hiu martil</h3><div class="latin mb-3">Sphyrna spp.</div>
+        <p>Kepala berbentuk palu diduga memperluas pandangan dan area sensor listrik. Sering berkelompok di sekitar terumbu.</p>
+        <div class="stat">hingga ±6 m</div><span class="badge tag tag-hi mt-2">Kritis (dua spesies besar)</span>
+      </div></article></div>
+      <div class="col"><article class="card h-100"><div class="card-body"><canvas class="sp" data-sp="whale" role="img" aria-label="Ilustrasi ASCII Hiu paus"></canvas>
+        <h3>Hiu paus</h3><div class="latin mb-3">Rhincodon typus</div>
+        <p>Ikan terbesar di dunia. Ia menyaring plankton dan tidak berbahaya bagi manusia. Bisa dijumpai di Teluk Cenderawasih, Papua.</p>
+        <div class="stat">sekitar 12 m</div><span class="badge tag tag-hi mt-2">Terancam punah</span>
+      </div></article></div>
+      <div class="col"><article class="card h-100"><div class="card-body"><canvas class="sp" data-sp="mako" role="img" aria-label="Ilustrasi ASCII Hiu mako"></canvas>
+        <h3>Hiu mako</h3><div class="latin mb-3">Isurus oxyrinchus</div>
+        <p>Salah satu hiu tercepat. Tubuhnya ramping dan ia bisa melesat hingga sekitar 70 km/jam.</p>
+        <div class="stat">hingga ±4 m</div><span class="badge tag tag-hi mt-2">Terancam punah</span>
+      </div></article></div>
+    </div>
+  </div>
+</section>
+
+<section id="peran" class="sec">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <h2 class="mb-3">Kenapa laut butuh hiu</h2>
+        <p class="lead-sm">Sebagai predator puncak, hiu mengendalikan populasi mangsa dan cenderung memangsa hewan yang sakit atau lemah. Kalau hiu menghilang, rantai makanan bergeser dan ekosistem seperti terumbu karang serta padang lamun ikut terganggu.</p>
+      </div>
+      <div class="col-lg-7">
+        <h3 class="h5 mb-3">Mitos dan fakta</h3>
+        <div class="accordion" id="mitos">
+          <div class="accordion-item">
+            <h4 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#m1" aria-expanded="true" aria-controls="m1">“Hiu memburu manusia”</button></h4>
+            <div id="m1" class="accordion-collapse collapse show" data-bs-parent="#mitos"><div class="accordion-body">Manusia bukan mangsa alami hiu. Gigitan umumnya terjadi karena salah mengenali target, dan jumlah kasusnya sangat kecil dibanding jumlah hiu yang dibunuh manusia.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2" aria-expanded="false" aria-controls="m2">“Semua hiu harus terus berenang agar hidup”</button></h4>
+            <div id="m2" class="accordion-collapse collapse" data-bs-parent="#mitos"><div class="accordion-body">Hanya sebagian. Hiu mako dan hiu putih memang bergantung pada gerakan maju untuk mengalirkan air ke insang, tetapi hiu perawat bisa diam di dasar dan memompa air sendiri.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3" aria-expanded="false" aria-controls="m3">“Hiu tidak bisa terkena kanker”</button></h4>
+            <div id="m3" class="accordion-collapse collapse" data-bs-parent="#mitos"><div class="accordion-body">Hiu bisa terkena kanker. Klaim bahwa tulang rawan hiu menyembuhkan kanker tidak terbukti, tetapi ikut mendorong perburuan hiu.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="lindungi" class="sec night">
+  <div class="container">
+    <h2 class="mb-4">Hiu sedang terancam</h2>
+    <div class="alert alert-ocean mb-5" role="alert">Diperkirakan sekitar 100 juta hiu terbunuh setiap tahun akibat aktivitas manusia. Banyak spesies tumbuh lambat dan beranak sedikit, jadi populasinya sulit pulih.</div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <h3 class="h5">Ancaman utama</h3>
+        <ul class="lead-sm ps-3">
+          <li class="mb-2">Perburuan untuk sirip, daging, dan minyak hati.</li>
+          <li class="mb-2">Tangkapan sampingan dari pukat dan rawai.</li>
+          <li class="mb-2">Rusaknya terumbu karang, mangrove, dan padang lamun tempat hiu muda tumbuh.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3 class="h5">Yang bisa kamu lakukan</h3>
+        <ul class="lead-sm ps-3">
+          <li class="mb-2">Hindari produk sirip hiu dan pilih seafood dari perikanan yang berkelanjutan.</li>
+          <li class="mb-2">Pilih operator selam dan wisata hiu yang menjaga jarak dan tidak memberi makan hiu.</li>
+          <li class="mb-2">Luruskan mitos tentang hiu saat kamu mendengarnya.</li>
+        </ul>
+        <a href="#hero" class="btn btn-solid mt-2">Kembali ke atas</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="py-4"><div class="container"><div class="mb-1"><strong>Farda Syarif Mubarok</strong> — NIM A12.2025.07306</div><div>Dibuat dengan Bootstrap 5. Efek ASCII meniru gaya komponen ASCII Ocean (Framer).</div></div></footer>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
